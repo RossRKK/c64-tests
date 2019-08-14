@@ -1,6 +1,7 @@
 * = $1000
-ldx #$00
-loop = *
-inc $D020
+ldx $D020
+
+loop
 inx
+stx $D020
 jmp loop
